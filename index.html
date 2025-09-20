@@ -3,55 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Technology - Inteligentne Rozwiązania IT i Automatyzacja</title>
-    <meta name="description" content="Od 2006 roku dostarczamy dedykowane oprogramowanie i wdrażamy rozwiązania oparte na AI, które optymalizują procesy i zwiększają efektywność.">
-    
+    <title>Human Technology — AI, automatyzacja i integracje dla ambitnych firm</title>
+    <meta name="description" content="Projektujemy i wdrażamy rozwiązania AI/RAG, automatyzację ServiceDesk oraz skalowalne backendy. Doświadczenie w fintechu, retailu, energetyce i ITSM. Od 2006 roku dowozimy wynik — szybciej, bezpieczniej, na większą skalę.">
+
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        /* Animacja dla tła w sekcji Hero */
-        @keyframes subtle-gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .animated-gradient {
-            background: linear-gradient(90deg, #111827, #1f2937, #111827);
-            background-size: 200% 200%;
-            animation: subtle-gradient 15s ease infinite;
-        }
-
-        /* CSS dla animacji nieskończonego przewijania logotypów */
-        @keyframes scroll {
-            from { transform: translateX(0); }
-            to { transform: translateX(calc(-100% - 4rem)); } /* 4rem to szerokość przerwy (gap) */
-        }
-        .scroller {
-            max-width: 900px;
-            overflow: hidden;
-            -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-        }
-        .scroller__inner {
-            display: flex;
-            gap: 4rem; /* Odstęp między logotypami */
-            padding-block: 1rem;
-            width: max-content;
-            animation: scroll 40s linear infinite;
-        }
-        .logo-item {
-            /* Styl dla logotypów */
-            height: 40px; /* Wysokość logotypów */
-            filter: grayscale(100%);
-            opacity: 0.6;
-            transition: all 0.3s ease;
-        }
-        .logo-item:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-            transform: scale(1.1);
-        }
+        @keyframes subtle-gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        .animated-gradient { background: linear-gradient(90deg, #111827, #1f2937, #111827); background-size: 200% 200%; animation: subtle-gradient 15s ease infinite; }
+        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(calc(-100% - 4rem)); } }
+        .scroller { max-width: 900px; overflow: hidden; -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); }
+        .scroller__inner { display: flex; gap: 4rem; padding-block: 1rem; width: max-content; animation: scroll 40s linear infinite; }
+        .logo-item { height: 40px; filter: grayscale(100%); opacity: 0.6; transition: all 0.3s ease; }
+        .logo-item:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-300 font-sans leading-relaxed">
@@ -62,6 +27,7 @@
             <a href="#" class="text-xl font-bold text-white tracking-wider">Human<span class="text-teal-400">Technology</span></a>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#services" class="hover:text-teal-400 transition-colors duration-300">Usługi</a>
+                <a href="#icp" class="hover:text-teal-400 transition-colors duration-300">Dla kogo</a>
                 <a href="#portfolio" class="hover:text-teal-400 transition-colors duration-300">Portfolio</a>
                 <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg transition-transform duration-300 hover:scale-105">Kontakt</a>
             </div>
@@ -73,14 +39,14 @@
         <section id="home" class="min-h-screen flex items-center justify-center text-center animated-gradient">
             <div class="container mx-auto px-6">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
-                    Inteligentne Rozwiązania IT<br>napędzane przez <span class="text-teal-400">AI</span>
+                    AI, automatyzacja i integracje,<br>które dowożą <span class="text-teal-400">wynik</span>
                 </h1>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-400 mb-8">
-                    Od 2006 roku przekuwamy technologię w realne korzyści biznesowe. Specjalizujemy się w automatyzacji procesów i tworzeniu oprogramowania dla firm oczekujących najwyższej jakości i niezawodności.
+                    Pomagamy fintechowi, retailowi, energetyce i zespołom ITSM szybciej wdrażać produkty, obniżać koszty operacyjne i przygotować systemy na skoki ruchu — bez kompromisów w jakości i bezpieczeństwie.
                 </p>
                 <div class="flex justify-center space-x-4">
-                    <a href="#services" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Zobacz nasze usługi</a>
-                    <a href="#contact" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Skontaktuj się</a>
+                    <a href="#services" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Zobacz usługi</a>
+                    <a href="#contact" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Umów rozmowę</a>
                 </div>
             </div>
         </section>
@@ -88,32 +54,32 @@
         <!-- Atuty Section -->
         <section id="atuty" class="py-20 bg-slate-900">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-white mb-3">Doświadczenie, któremu możesz zaufać</h2>
-                <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Nasze kompetencje to nie tylko technologie, ale przede wszystkim realne wdrożenia w najbardziej wymagających środowiskach.</p>
+                <h2 class="text-3xl font-bold text-white mb-3">Co zyskasz z Human Technology</h2>
+                <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Naszą miarą sukcesu są <span class="text-white font-semibold">konkretne efekty</span>: krótszy time‑to‑value, niższy TCO, stabilność pod dużym ruchem i zespoły odciążone od rutyny.</p>
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- Atut 1 -->
                     <div class="bg-slate-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="flex justify-center mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Gotowość na ogromny ruch</h3>
-                        <p class="text-slate-400">Pracowaliśmy nad systemami dla globalnych liderów jak <strong>PayPal</strong> i <strong>Foot Locker</strong>, zapewniając ich stabilność i wydajność pod ekstremalnym obciążeniem.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Skala bez zaskoczeń</h3>
+                        <p class="text-slate-400">Przygotowujemy systemy na kampanie i piki — doświadczenie m.in. w projektach retail (kampanie Foot Locker) i integracjach płatności używanych globalnie.</p>
                     </div>
                     <!-- Atut 2 -->
                     <div class="bg-slate-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="flex justify-center mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Najwyższa jakość i architektura</h3>
-                        <p class="text-slate-400">Kładziemy nacisk na czysty kod i nowoczesne wzorce (<strong>Domain-Driven Design</strong>, mikroserwisy), co gwarantuje skalowalność i łatwość utrzymania systemu.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Architektura, która dojrzewa</h3>
+                        <p class="text-slate-400">Stawiamy na czysty kod i nowoczesne wzorce (DDD, mikroserwisy). To oznacza szybsze wdrożenia, łatwiejsze utrzymanie i niższe koszty zmian.</p>
                     </div>
                     <!-- Atut 3 -->
                     <div class="bg-slate-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="flex justify-center mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Innowacje i własne produkty</h3>
-                        <p class="text-slate-400">Stworzyliśmy i sprzedaliśmy narzędzia (arsmacros.com), które przez <strong>IBM</strong> trafiły do największego operatora w Australii – <strong>Telstra</strong>. To dowód naszej skuteczności.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Sprawdzone komponenty</h3>
+                        <p class="text-slate-400">Od własnych narzędzi po gotowe biblioteki — przyspieszamy wdrożenia i ograniczamy ryzyko. Nasze rozwiązania były rekomendowane w środowiskach enterprise.</p>
                     </div>
                 </div>
             </div>
@@ -122,42 +88,68 @@
         <!-- Services Section -->
         <section id="services" class="py-20 bg-slate-900/50">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-white mb-3">Co oferujemy?</h2>
-                <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Koncentrujemy się na trzech kluczowych obszarach, które przynoszą realne oszczędności i otwierają nowe możliwości dla Twojego biznesu.</p>
+                <h2 class="text-3xl font-bold text-white mb-3">Usługi, które odciążają Twój biznes</h2>
+                <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Trzy obszary, które najszybciej tworzą wartość — od pierwszego proof‑of‑value po produkcję.</p>
                 <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 text-left">
                     <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
-                        <h3 class="text-xl font-bold text-teal-400 mb-3">Rozwiązania oparte na AI i RAG</h3>
-                        <p class="text-slate-400">Budujemy inteligentnych asystentów i systemy RAG (Retrieval-Augmented Generation), które automatyzują dostęp do wiedzy w firmie, usprawniają obsługę klienta i analizę dokumentów.</p>
+                        <h3 class="text-xl font-bold text-teal-400 mb-3">AI Copilots &amp; RAG dla firm</h3>
+                        <p class="text-slate-400">Asystenci i wyszukiwarki wiedzy, które skracają czas odpowiedzi, odciążają wsparcie i ujednolicają jakość. Bezpieczna izolacja danych, audytowalność i kontrola wersji promptów.</p>
                     </div>
                     <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
-                        <h3 class="text-xl font-bold text-teal-400 mb-3">Automatyzacja Procesów Biznesowych</h3>
-                        <p class="text-slate-400">Projektujemy narzędzia, które eliminują powtarzalne zadania. Integrujemy się z istniejącymi systemami, jak <strong>ManageEngine ServiceDesk Plus</strong>, <strong>ServiceNow</strong> i <strong>BMC Remedy</strong>, by maksymalizować efektywność zespołu.</p>
+                        <h3 class="text-xl font-bold text-teal-400 mb-3">Automatyzacja ITSM &amp; ServiceDesk</h3>
+                        <p class="text-slate-400">Enrichment, routing i auto‑resolve zgłoszeń, integracje i raporty dla <strong>ManageEngine ServiceDesk Plus</strong>, <strong>ServiceNow</strong> i <strong>BMC Remedy</strong>. Mniej ręcznej pracy, krótsze SLA, więcej przewidywalności.</p>
                     </div>
                     <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
-                        <h3 class="text-xl font-bold text-teal-400 mb-3">Dedykowane Oprogramowanie Backendowe</h3>
-                        <p class="text-slate-400">Tworzymy wydajne i skalowalne aplikacje webowe oraz mikrousługi. Dostarczamy solidne fundamenty dla Twoich produktów cyfrowych w oparciu o sprawdzone technologie.</p>
+                        <h3 class="text-xl font-bold text-teal-400 mb-3">Integracje i dedykowane backendy</h3>
+                        <p class="text-slate-400">Mikrousługi, API, przetwarzanie strumieniowe i ETL. Projektujemy i dostarczamy fundamenty produktów cyfrowych, które rosną razem z Twoją firmą.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- NOWA SEKCJA PORTFOLIO z animacją -->
+        <!-- Dla kogo (ICP) -->
+        <section id="icp" class="py-20 bg-slate-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-3">Dla kogo pracujemy?</h2>
+                <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Najlepiej pomagamy organizacjom, które chcą szybko dowieźć wartość, a jednocześnie działają w środowiskach wymagających jakości, zgodności i skalowalności.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-white mb-2">Banki &amp; fintech</h3>
+                        <p class="text-slate-400">Systemy o wysokim wolumenie, rozliczenia, integracje płatności, bezpieczeństwo i zgodność.</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-white mb-2">Retail &amp; e‑commerce</h3>
+                        <p class="text-slate-400">Przygotowanie na kampanie i piki, wydajność API, stabilność i monitoring.</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-white mb-2">Energetyka &amp; utilities</h3>
+                        <p class="text-slate-400">Integracje danych, automatyzacja procesów i narzędzia dla operacji na dużej skali.</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                        <h3 class="text-lg font-bold text-white mb-2">ITSM &amp; działy IT</h3>
+                        <p class="text-slate-400">Automatyzacje ServiceDesk, RAG dla dokumentacji, skracanie czasów reakcji i rozwiązań.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
         <section id="portfolio" class="py-20 bg-slate-900">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-white mb-12">Współpracowaliśmy z najlepszymi</h2>
+                <h2 class="text-3xl font-bold text-white mb-12">Wybrane doświadczenia</h2>
                 <div class="scroller mx-auto">
                     <div class="scroller__inner">
-                        <!-- Pierwszy zestaw logotypów -->
+                        <!-- logotypy bez zmian -->
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/fr/9/94/Foot_Locker_logo.svg" alt="Foot Locker Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sage-logo_svg.svg/2880px-Sage-logo_svg.svg.png" alt="Sage Group Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg" alt="Siemens Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/en/c/c1/Telstra_logo.svg" alt="Telstra Logo">
-                        <img class="logo-item h-8 self-center" src="https://upload.wikimedia.org/wikipedia/commons/2/23/FI-TS_Logo.svg" alt="F-I-TS Logo"> <!-- Lekko dostosowana wysokość dla lepszego wyglądu -->
+                        <img class="logo-item h-8 self-center" src="https://upload.wikimedia.org/wikipedia/commons/2/23/FI-TS_Logo.svg" alt="F-I-TS Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/H%C3%B6rmann_%28T%C3%BCrenhersteller%29_logo.svg/2880px-H%C3%B6rmann_%28T%C3%BCrenhersteller%29_logo.svg.png" alt="Hörmann Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo">
-                        
-                        <!-- Drugi, zduplikowany zestaw logotypów dla płynnej animacji -->
+
+                        <!-- duplikat dla animacji -->
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/fr/9/94/Foot_Locker_logo.svg" alt="Foot Locker Logo">
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sage-logo_svg.svg/2880px-Sage-logo_svg.svg.png" alt="Sage Group Logo">
@@ -168,6 +160,7 @@
                         <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo">
                     </div>
                 </div>
+                <p class="text-xs text-slate-500 mt-6">Nazwy i logotypy ilustrują doświadczenia zdobyte w projektach i kontraktach członków zespołu. W razie potrzeby pracujemy w modelu NDA.</p>
             </div>
         </section>
 
@@ -176,7 +169,7 @@
             <div class="container mx-auto px-6">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-white mb-3">Porozmawiajmy o Twoim projekcie</h2>
-                    <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Masz pomysł na automatyzację lub potrzebujesz wsparcia technologicznego? Skontaktuj się z nami.</p>
+                    <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Bezpłatna konsultacja wstępna: wstępna diagnoza, kierunek rozwiązania i następne kroki — bez zobowiązań.</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-12 items-start">
                     <!-- Company Info -->
@@ -186,6 +179,9 @@
                             <p><strong>Dariusz Miśkiewicz Human Technology</strong></p>
                             <p>NIP: 9730802171</p>
                             <p>Tel: <a href="tel:+48884160776" class="text-teal-400 hover:underline">884 160 776</a></p>
+                        </div>
+                        <div class="mt-6 text-slate-400 text-sm">
+                            <p>Modele współpracy: fixed‑scope (zamknięty zakres) lub time&amp;materials — zawsze z przejrzystą komunikacją i mierzalnymi celami.</p>
                         </div>
                     </div>
                     <!-- Contact Form -->
@@ -201,7 +197,7 @@
                             </div>
                             <div>
                                 <label for="message" class="block text-sm font-medium text-slate-400 mb-1">Treść wiadomości</label>
-                                <textarea name="message" id="message" rows="5" required class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                                <textarea name="message" id="message" rows="5" required class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Napisz krótko: branża, cel projektu, kluczowe ograniczenia (np. bezpieczeństwo, zgodność, termin)."></textarea>
                             </div>
                             <div>
                                 <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Wyślij wiadomość</button>
