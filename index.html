@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Technology - Inteligentne Rozwiązania IT i Automatyzacja</title>
+    <meta name="description" content="Od 2006 roku dostarczamy dedykowane oprogramowanie i wdrażamy rozwiązania oparte na AI, które optymalizują procesy i zwiększają efektywność.">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Animacja dla tła w sekcji Hero */
+        @keyframes subtle-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-gradient {
+            background: linear-gradient(90deg, #111827, #1f2937, #111827);
+            background-size: 200% 200%;
+            animation: subtle-gradient 15s ease infinite;
+        }
+
+        /* CSS dla animacji nieskończonego przewijania logotypów */
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-100% - 4rem)); } /* 4rem to szerokość przerwy (gap) */
+        }
+        .scroller {
+            max-width: 900px;
+            overflow: hidden;
+            -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        }
+        .scroller__inner {
+            display: flex;
+            gap: 4rem; /* Odstęp między logotypami */
+            padding-block: 1rem;
+            width: max-content;
+            animation: scroll 40s linear infinite;
+        }
+        .logo-item {
+            /* Styl dla logotypów */
+            height: 40px; /* Wysokość logotypów */
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+        .logo-item:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white tracking-wider">Human<span class="text-teal-400">Technology</span></a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#services" class="hover:text-teal-400 transition-colors duration-300">Usługi</a>
+                <a href="#portfolio" class="hover:text-teal-400 transition-colors duration-300">Portfolio</a>
+                <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg transition-transform duration-300 hover:scale-105">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center text-center animated-gradient">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                    Inteligentne Rozwiązania IT<br>napędzane przez <span class="text-teal-400">AI</span>
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-400 mb-8">
+                    Od 2006 roku przekuwamy technologię w realne korzyści biznesowe. Specjalizujemy się w automatyzacji procesów i tworzeniu oprogramowania dla firm oczekujących najwyższej jakości i niezawodności.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#services" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Zobacz nasze usługi</a>
+                    <a href="#contact" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Skontaktuj się</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atuty Section -->
+        <section id="atuty" class="py-20 bg-slate-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-3">Doświadczenie, któremu możesz zaufać</h2>
+                <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Nasze kompetencje to nie tylko technologie, ale przede wszystkim realne wdrożenia w najbardziej wymagających środowiskach.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Atut 1 -->
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Gotowość na ogromny ruch</h3>
+                        <p class="text-slate-400">Pracowaliśmy nad systemami dla globalnych liderów jak <strong>PayPal</strong> i <strong>Foot Locker</strong>, zapewniając ich stabilność i wydajność pod ekstremalnym obciążeniem.</p>
+                    </div>
+                    <!-- Atut 2 -->
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Najwyższa jakość i architektura</h3>
+                        <p class="text-slate-400">Kładziemy nacisk na czysty kod i nowoczesne wzorce (<strong>Domain-Driven Design</strong>, mikroserwisy), co gwarantuje skalowalność i łatwość utrzymania systemu.</p>
+                    </div>
+                    <!-- Atut 3 -->
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Innowacje i własne produkty</h3>
+                        <p class="text-slate-400">Stworzyliśmy i sprzedaliśmy narzędzia (arsmacros.com), które przez <strong>IBM</strong> trafiły do największego operatora w Australii – <strong>Telstra</strong>. To dowód naszej skuteczności.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-3">Co oferujemy?</h2>
+                <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Koncentrujemy się na trzech kluczowych obszarach, które przynoszą realne oszczędności i otwierają nowe możliwości dla Twojego biznesu.</p>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 text-left">
+                    <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
+                        <h3 class="text-xl font-bold text-teal-400 mb-3">Rozwiązania oparte na AI i RAG</h3>
+                        <p class="text-slate-400">Budujemy inteligentnych asystentów i systemy RAG (Retrieval-Augmented Generation), które automatyzują dostęp do wiedzy w firmie, usprawniają obsługę klienta i analizę dokumentów.</p>
+                    </div>
+                    <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
+                        <h3 class="text-xl font-bold text-teal-400 mb-3">Automatyzacja Procesów Biznesowych</h3>
+                        <p class="text-slate-400">Projektujemy narzędzia, które eliminują powtarzalne zadania. Integrujemy się z istniejącymi systemami, jak <strong>ManageEngine ServiceDesk Plus</strong>, by maksymalizować efektywność zespołu.</p>
+                    </div>
+                    <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-slate-700">
+                        <h3 class="text-xl font-bold text-teal-400 mb-3">Dedykowane Oprogramowanie Backendowe</h3>
+                        <p class="text-slate-400">Tworzymy wydajne i skalowalne aplikacje webowe oraz mikrousługi. Dostarczamy solidne fundamenty dla Twoich produktów cyfrowych w oparciu o sprawdzone technologie.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOWA SEKCJA PORTFOLIO z animacją -->
+        <section id="portfolio" class="py-20 bg-slate-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-12">Współpracowaliśmy z najlepszymi</h2>
+                <div class="scroller mx-auto">
+                    <div class="scroller__inner">
+                        <!-- Pierwszy zestaw logotypów -->
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Foot_Locker_logo.svg" alt="Foot Locker Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Sage_logo.svg" alt="Sage Group Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg" alt="Siemens Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Telstra_logo.svg" alt="Telstra Logo">
+                        <img class="logo-item h-8 self-center" src="https://upload.wikimedia.org/wikipedia/de/a/a8/F-I-TS-Logo.svg" alt="F-I-TS Logo"> <!-- Lekko dostosowana wysokość dla lepszego wyglądu -->
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/9/91/H%C3%B6rmann_Logo.svg" alt="Hörmann Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo">
+                        
+                        <!-- Drugi, zduplikowany zestaw logotypów dla płynnej animacji -->
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Foot_Locker_logo.svg" alt="Foot Locker Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Sage_logo.svg" alt="Sage Group Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg" alt="Siemens Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Telstra_logo.svg" alt="Telstra Logo">
+                        <img class="logo-item h-8 self-center" src="https://upload.wikimedia.org/wikipedia/de/a/a8/F-I-TS-Logo.svg" alt="F-I-TS Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/9/91/H%C3%B6rmann_Logo.svg" alt="Hörmann Logo">
+                        <img class="logo-item" src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-white mb-3">Porozmawiajmy o Twoim projekcie</h2>
+                    <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Masz pomysł na automatyzację lub potrzebujesz wsparcia technologicznego? Skontaktuj się z nami.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <!-- Company Info -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Dane firmy</h3>
+                        <div class="space-y-3 text-lg">
+                            <p><strong>Dariusz Miśkiewicz Human Technology</strong></p>
+                            <p>NIP: 9730802171</p>
+                            <p>Tel: <a href="tel:+48884160776" class="text-teal-400 hover:underline">884 160 776</a></p>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div>
+                        <!-- 
+                          INSTRUKCJA FORMULARZA:
+                          1. Zarejestruj się na https://formspree.io/
+                          2. Utwórz nowy formularz i skopiuj jego unikalny URL.
+                          3. Wklej ten URL w atrybucie 'action' poniżej, zastępując "YOUR_FORM_ID".
+                          Formspree automatycznie obsłuży wysyłkę maili i zapewni ochronę antyspamową.
+                        -->
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-400 mb-1">Imię i nazwisko</label>
+                                <input type="text" name="name" id="name" required class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-400 mb-1">Adres e-mail</label>
+                                <input type="email" name="email" id="email" required class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-400 mb-1">Treść wiadomości</label>
+                                <textarea name="message" id="message" rows="5" required class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">Wyślij wiadomość</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-6">
+        <div class="container mx-auto px-6 text-center text-slate-500">
+            <p>&copy; 2024 Dariusz Miśkiewicz Human Technology. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
