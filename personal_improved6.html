@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Dariusz Miśkiewicz | Lead Engineer, FinTech Architect & BioTech R&D</title>
-    <meta name="description" content="Ekspert inżynierii oprogramowania (PayPal, Siemens, Sage). Skalowanie systemów, Legacy Rescue i Bioinformatyka. Oszczędność tysięcy godzin pracy dzięki automatyzacji.">
+    <title>Dariusz Miśkiewicz | High-Performance Engineer & BioTech R&D</title>
+    <meta name="description" content="Lead Software Engineer (PayPal, Sage, Siemens). Specjalizacja: High-Performance Systems, Legacy Rescue & AI for Biotech. 20 lat doświadczenia.">
     
     <script type="application/ld+json">
     {
@@ -17,7 +17,7 @@
       "sameAs": [
         "https://www.linkedin.com/in/dariusz-miskiewicz/"
       ],
-      "knowsAbout": ["Ruby on Rails", "Fintech Architecture", "Bioinformatics", "Legacy Code Refactoring", "AI Automation"],
+      "knowsAbout": ["Ruby on Rails", "Fintech Architecture", "Bioinformatics", "Legacy Code Refactoring", "AI Automation", "Recursive Prompting"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Uniwersytet Zielonogórski"
@@ -30,6 +30,7 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -39,6 +40,7 @@
         body { font-family: 'Inter', sans-serif; }
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         
+        /* Custom Gradients & Cards */
         .metric-card {
             background: linear-gradient(145deg, rgba(30, 41, 59, 0.4), rgba(15, 23, 42, 0.6));
             border: 1px solid rgba(255,255,255,0.05);
@@ -47,6 +49,12 @@
         .metric-card:hover {
             border-color: rgba(99, 102, 241, 0.5);
             transform: translateY(-2px);
+        }
+        
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
     </style>
 </head>
@@ -67,51 +75,56 @@
     </nav>
 
     <main>
-        <section class="min-h-[90vh] flex items-center relative pt-20">
+        <section class="min-h-[90vh] flex items-center relative pt-20 overflow-hidden">
             <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-            
+            <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[100px]"></div>
+
             <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-5xl" data-aos="fade-up">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono mb-6">
-                        <span>🚀 DOSTĘPNOŚĆ: Q1 2025</span>
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                        </span>
+                        <span>OPEN FOR R&D & CONSULTING</span>
                     </div>
                     
                     <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-8">
-                        Naprawiam systemy, <br>które inni spisali na straty.
+                        High-Performance Engineering.<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Od Fintechu po Genetykę.</span>
                     </h1>
                     
                     <p class="text-xl text-slate-400 leading-relaxed max-w-2xl mb-12">
-                        Architektura mikroserwisów dla <strong>Fintechu</strong> (miliardy transakcji). 
-                        Optymalizacja <strong>E-commerce</strong> pod Black Friday. 
-                        Teraz wykorzystuję tę precyzję, by budować <strong>AI dla medycyny</strong>.
+                        20 lat doświadczenia w systemach <strong>Enterprise</strong> (PayPal, Sage, Siemens). 
+                        Dostarczam matematyczną precyzję tam, gdzie liczy się skala, bezpieczeństwo i wynik — od miliardów transakcji po analizę DNA.
                     </p>
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                        <div class="metric-card p-5 rounded-lg">
+                        <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
                             <div class="text-3xl font-bold text-white mb-1">30 etatów</div>
                             <div class="text-xs text-slate-500 uppercase tracking-wide">Zaoszczędzone (Telstra)</div>
                         </div>
-                        <div class="metric-card p-5 rounded-lg">
+                        <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
                             <div class="text-3xl font-bold text-white mb-1">8x</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wide">Wydajność vs Zespół (Sage)</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide">Wydajność vs Średnia (Sage)</div>
                         </div>
-                        <div class="metric-card p-5 rounded-lg">
+                        <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
                             <div class="text-3xl font-bold text-white mb-1">0 downtime</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wide">Migracja Miliardów Transakcji</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide">Miliardy Transakcji (PayPal)</div>
                         </div>
-                        <div class="metric-card p-5 rounded-lg">
-                            <div class="text-3xl font-bold text-white mb-1">1000h+</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wide">Automatyzacja (Hörmann)</div>
+                        <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
+                            <div class="text-3xl font-bold text-white mb-1">BioTech</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide">Certyfikowany w PCR/UG</div>
                         </div>
                     </div>
 
                     <div class="flex flex-wrap gap-4">
                         <a href="#contact" class="bg-indigo-600 text-white px-8 py-4 font-bold rounded hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/20">
-                            Porozmawiajmy o Twoim projekcie
+                            Współpraca Komercyjna
                         </a>
-                        <a href="#mission" class="px-8 py-4 font-medium text-slate-300 hover:text-white flex items-center gap-2 transition-colors">
-                            Moja misja: Open-Cure
-                            <span class="text-indigo-400">→</span>
+                        <a href="#mission" class="px-8 py-4 font-medium text-slate-300 hover:text-white flex items-center gap-2 transition-colors border border-slate-700 rounded hover:bg-slate-800">
+                            Misja Fundacji
+                            <span class="text-purple-400">→</span>
                         </a>
                     </div>
                 </div>
@@ -121,64 +134,89 @@
         <section id="results" class="py-24 bg-[#0F1420] border-y border-white/5">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-white mb-4">Case Studies</h2>
-                    <p class="text-slate-400">Konkretne problemy. Matematyczne podejście. Wymierne wyniki.</p>
+                    <h2 class="text-3xl font-bold text-white mb-4">Algorytmiczne myślenie w erze AI</h2>
+                    <p class="text-slate-400">Gdy inni widzą kod, ja widzę równania do zoptymalizowania.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12 items-start">
+                    
                     <div data-aos="fade-right">
                         <div class="sticky top-24">
-                            <h3 class="text-2xl font-bold text-white mb-6">Dlaczego "Tytan Pracy"?</h3>
+                            <h3 class="text-2xl font-bold text-white mb-6">Nie tylko kod. <br><span class="text-indigo-400">Matematyczna efektywność.</span></h3>
+                            
                             <div class="space-y-6 text-slate-400 leading-relaxed text-lg">
                                 <p>
-                                    W świecie IT wielu programistów czeka, aż "testy przejdą". Ja w tym czasie rozwiązuję kolejny problem.
+                                    Moja przewaga nie wynika ze znajomości składni języka, ale z myślenia. Jako inżynier, który <strong>uściślił dowód twierdzenia z analizy kombinatorycznej</strong> i opracowałem autorski algorytm sortowania o złożoności O(n) — patrzę na systemy jak na zbiory reguł.
                                 </p>
                                 <p>
-                                    W <strong>Sage Group plc</strong>, podczas audytu wydajności zespołu, okazało się, że w połowie sprintu rozwiązałem <strong class="text-white">16 ticketów</strong>. Średnia zespołu wynosiła 2. Nie chodzi o pośpiech, ale o analityczne zrozumienie kodu, które pozwala mi nawigować po nim szybciej niż inni.
+                                    W <strong>Sage Group</strong> pozwoliło mi to osiągnąć 8-krotnie wyższą wydajność niż średnia zespołu (16 ticketów vs 2). Dziś to samo rygorystyczne podejście stosuję do modeli językowych (LLM).
                                 </p>
-                                <blockquote class="border-l-4 border-indigo-500 pl-6 italic text-slate-500 my-8">
-                                    "Jeszcze nie mieliśmy kogoś, kto tak szybko zrozumiał o co chodzi w naszym kodzie."
-                                    <footer class="text-xs font-bold text-indigo-400 mt-2 uppercase">— Siemens, Feedback zespołu</footer>
-                                </blockquote>
+                                
+                                <div class="mt-6 border-l-2 border-purple-500 pl-6 py-2">
+                                    <h4 class="text-white font-bold text-lg mb-2">Kontrola nad Halucynacjami</h4>
+                                    <p class="text-sm text-slate-400 mb-4">
+                                        Większość traktuje AI jak "czarną skrzynkę". Ja analizuję ją na poziomie prawdopodobieństwa tokenów. Już na wczesnych modelach GPT badałem wpływ <i>context window</i> na wynik predykcji.
+                                    </p>
+                                    
+                                    <div class="bg-slate-900/50 p-4 rounded border border-slate-700 text-sm font-mono text-slate-300 mb-4">
+                                        <p class="text-xs text-slate-500 mb-2">// Test sterowania kontekstem (Token Probability):</p>
+                                        <p>Context: "Hydrologia" &rarr; Next token: "woda"</p>
+                                        <p>Context: "Filozofia" &rarr; Next token: "wola"</p>
+                                    </div>
+
+                                    <p class="text-sm text-slate-400">
+                                        Dzięki temu wiem, jak budować systemy RAG, które są <strong>deterministyczne</strong>. Stosuję <strong>Recursive Prompt Optimization</strong> — technikę wymuszania na modelu autokorekty, aby wyniki medyczne i finansowe były zawsze powtarzalne i bezpieczne.
+                                    </p>
+                                </div>
+
+                                <div class="mt-8 p-6 rounded-xl bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20">
+                                    <h4 class="text-white font-bold mb-2 flex items-center gap-2">
+                                        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                                        Wartość dla Biznesu
+                                    </h4>
+                                    <p class="text-sm text-slate-400">
+                                        Przekształcam "kreatywne" AI w precyzyjne narzędzie inżynierskie. Kluczowe dla branż regulowanych (Fintech, MedTech).
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="grid gap-6" data-aos="fade-left">
                         
-                        <div class="bg-slate-900/50 p-8 rounded-xl border border-slate-800 hover:border-indigo-500/30 transition-all group">
+                        <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
                             <div class="flex justify-between items-start mb-4">
                                 <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">PayPal & Fintech</h4>
                                 <span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Miliardy Transakcji</span>
                             </div>
-                            <div class="space-y-2 text-sm text-slate-400">
-                                <p><strong class="text-slate-200">Wyzwanie:</strong> Wdrażanie zmian w legacy code bez dokumentacji w systemie krytycznym.</p>
-                                <p><strong class="text-slate-200">Rozwiązanie:</strong> Implementacja "percentage feature switch" dla webhooków oraz uporządkowanie architektury mikroserwisów.</p>
-                                <p><strong class="text-slate-200">Wynik:</strong> 0 downtime'u. Możliwość bezpiecznego testowania zmian na 1% ruchu przed pełnym wdrożeniem.</p>
+                            <div class="space-y-3 text-sm text-slate-400">
+                                <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Migracja i wdrażanie zmian w niedokumentowanym legacy code (Ruby/Microservices) przy ogromnej skali.</p>
+                                <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Implementacja "percentage feature switch" dla webhooków, umożliwiająca bezpieczne testowanie na produkcji.</p>
+                                <p><strong class="text-slate-200 block mb-1">Wynik:</strong> 0 downtime'u, uporządkowana architektura, pełna obserwowalność w Splunk.</p>
                             </div>
                         </div>
 
-                        <div class="bg-slate-900/50 p-8 rounded-xl border border-slate-800 hover:border-indigo-500/30 transition-all group">
+                        <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
                             <div class="flex justify-between items-start mb-4">
                                 <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Foot Locker</h4>
-                                <span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">High Traffic / Black Friday</span>
+                                <span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">High Traffic Load</span>
                             </div>
-                            <div class="space-y-2 text-sm text-slate-400">
-                                <p><strong class="text-slate-200">Wyzwanie:</strong> Główna strona sklepu nie wytrzymywała obciążenia podczas Black Friday.</p>
-                                <p><strong class="text-slate-200">Rozwiązanie:</strong> Optymalizacja krytycznej sekcji kampanii marketingowej (backend + frontend performance).</p>
-                                <p><strong class="text-slate-200">Wynik:</strong> Moja sekcja działała płynnie pod gigantycznym obciążeniem, "ratując" sprzedaż kampanii.</p>
+                            <div class="space-y-3 text-sm text-slate-400">
+                                <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Krytyczne obciążenie podczas Black Friday, awaria głównej strony.</p>
+                                <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Agresywna optymalizacja backendu i cache'owania dedykowanej sekcji kampanii.</p>
+                                <p><strong class="text-slate-200 block mb-1">Wynik:</strong> Moja sekcja obsłużyła cały ruch bezbłędnie, ratując przychód z kampanii.</p>
                             </div>
                         </div>
 
-                        <div class="bg-slate-900/50 p-8 rounded-xl border border-slate-800 hover:border-indigo-500/30 transition-all group">
+                        <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
                             <div class="flex justify-between items-start mb-4">
                                 <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Telstra & Hörmann</h4>
                                 <span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Automatyzacja</span>
                             </div>
-                            <div class="space-y-2 text-sm text-slate-400">
-                                <p><strong class="text-slate-200">Wyzwanie:</strong> Tysiące godzin marnowanych na ręczne przepisywanie danych między systemami (SharePoint -> ITSM).</p>
-                                <p><strong class="text-slate-200">Rozwiązanie:</strong> Customowe narzędzia automatyzacji procesów (ArsMacros).</p>
-                                <p><strong class="text-slate-200">Wynik:</strong> Oszczędność pracy równoważna 30 etatom (Telstra) i tysiącom godzin rocznie (Hörmann).</p>
+                            <div class="space-y-3 text-sm text-slate-400">
+                                <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Tysiące godzin traconych na manualne procesy (SharePoint/ITSM).</p>
+                                <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Budowa customowych narzędzi integrujących i automatyzujących przepływ danych (ArsMacros).</p>
+                                <p><strong class="text-slate-200 block mb-1">Wynik:</strong> Oszczędność pracy równoważna 30 etatom (Telstra). ROI liczone w milionach.</p>
                             </div>
                         </div>
 
@@ -193,14 +231,14 @@
                 <span class="text-indigo-400 font-mono text-xs tracking-widest uppercase mb-4 block">Beyond Engineering</span>
                 <h2 class="text-4xl font-bold text-white mb-8">Dlaczego robię to, co robię?</h2>
                 
-                <div class="max-w-3xl mx-auto bg-slate-800/50 backdrop-blur border border-slate-700 p-8 md:p-12 rounded-2xl">
-                    <p class="text-lg text-slate-300 mb-6 leading-relaxed text-left">
+                <div class="max-w-3xl mx-auto glass-panel p-8 md:p-12 rounded-2xl text-left border-indigo-500/20">
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed">
                         Mój 10-letni syn choruje na dysplazję włóknistą. Przez pomyłkę histopatologa groziła mu okaleczająca operacja. Uratowała nas dopiero moja upartość w szukaniu prawdy i badania genetyczne ("złoty standard"), o których lekarze w natłoku danych często zapominają.
                     </p>
-                    <p class="text-lg text-slate-300 mb-6 leading-relaxed text-left">
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed">
                         Zrozumiałem, że medycyna potrzebuje inżynierów. Dlatego zdobyłem <strong>certyfikat z technik PCR i bioinformatyki na Uniwersytecie Gdańskim</strong> — aby rozumieć problem u źródła, na poziomie DNA, i budować narzędzia, których lekarze realnie potrzebują.
                     </p>
-                    <p class="text-lg text-slate-300 mb-8 leading-relaxed text-left border-l-2 border-indigo-500 pl-4">
+                    <p class="text-lg text-slate-300 mb-8 leading-relaxed border-l-2 border-indigo-500 pl-4">
                         Mój cel jest jasny: Buduję agenta AI weryfikującego procedury leczenia chorób rzadkich, a docelowo — <strong>uruchamiam badania nad lekiem</strong>. Wiedza inżynierska i zyski z komercyjnych projektów są paliwem dla tej misji.
                     </p>
                     
@@ -221,7 +259,7 @@
 
         <section id="contact" class="py-24">
             <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto grid md:grid-cols-5 gap-12 bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+                <div class="max-w-4xl mx-auto grid md:grid-cols-5 gap-12 glass-panel rounded-2xl overflow-hidden border border-slate-800">
                     
                     <div class="md:col-span-2 bg-indigo-900/20 p-10 flex flex-col justify-between">
                         <div>
