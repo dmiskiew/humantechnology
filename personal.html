@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dariusz Miśkiewicz | Human Technology — High-Stakes Engineering</title>
+    <meta name="description" content="Ekspert inżynierii oprogramowania. Od systemów Fintech po Bioinformatykę. Matematyczna precyzja w rozwiązywaniu problemów IT.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #cbd5e1 0%, #ffffff 50%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .story-card {
+            background: linear-gradient(180deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.8) 100%);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="bg-[#0B0F19] text-slate-300 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-[#0B0F19]/90 backdrop-blur border-b border-white/5">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-bold text-white text-lg tracking-wider">D.MIŚKIEWICZ <span class="text-slate-500 font-light">| HUMAN TECH</span></div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#expertise" class="hover:text-white transition-colors">Ekspertyza</a>
+                <a href="#mission" class="hover:text-white transition-colors">Misja BioTech</a>
+                <a href="#projects" class="hover:text-white transition-colors">Realizacje</a>
+                <a href="#contact" class="text-white border border-white/20 px-4 py-2 rounded hover:bg-white hover:text-black transition-all">Współpraca</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="min-h-screen flex items-center relative pt-20">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+            <div class="absolute top-1/4 right-0 w-1/3 h-1/3 bg-indigo-900/20 blur-[120px] rounded-full"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl" data-aos="fade-up">
+                    <p class="text-indigo-400 font-medium tracking-widest text-sm mb-6 uppercase">Lead Software Engineer & Researcher</p>
+                    <h1 class="text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-8">
+                        Matematyczna precyzja <br>
+                        <span class="italic font-light text-slate-400">w świecie chaosu danych.</span>
+                    </h1>
+                    <p class="text-xl text-slate-400 leading-relaxed max-w-2xl mb-10">
+                        Od 20 lat naprawiam krytyczne systemy dla globalnych graczy (PayPal, Siemens, Sage). 
+                        Teraz wykorzystuję to doświadczenie, by budować <strong>AI dla diagnostyki medycznej</strong>.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#expertise" class="bg-white text-[#0B0F19] px-8 py-4 font-bold rounded hover:bg-indigo-50 transition-colors">
+                            Jak mogę pomóc Twojej firmie?
+                        </a>
+                        <a href="#mission" class="border border-slate-700 text-white px-8 py-4 font-medium rounded hover:bg-white/5 transition-colors flex items-center gap-2">
+                            Moja misja: Open-Cure
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-[#0F1420]">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl font-bold text-white mb-6">Umysł analityczny, nie tylko "programistyczny".</h2>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            Wielu programistów uczy się frameworków. Ja zaczynałem od **matematyki**. Na studiach uściśliłem dowód twierdzenia z analizy kombinatorycznej i opracowałem własny algorytm sortowania (złożoność O(n) dla specyficznych danych), szybszy niż standardowy QuickSort.
+                        </p>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            Ta umiejętność myślenia "od pierwszych zasad" (first-principles thinking) sprawia, że w firmach takich jak **PayPal** czy **Sage** byłem znany jako osoba, która najszybciej "łapie" skomplikowany kod i widzi rozwiązania, których inni nie dostrzegają.
+                        </p>
+                        <div class="flex items-center gap-4 mt-8">
+                            <div class="border-l-2 border-indigo-500 pl-4">
+                                <p class="text-white italic">"Jeszcze nie mieliśmy kogoś, kto tak szybko zrozumiał o co chodzi w naszym kodzie."</p>
+                                <p class="text-sm text-slate-500 mt-1">— Feedback od klienta Enterprise</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-6" data-aos="fade-left">
+                        <div class="story-card p-6 rounded-lg">
+                            <h3 class="text-lg font-bold text-white mb-2">Legacy Rescue & Refactoring</h3>
+                            <p class="text-sm text-slate-400">Specjalizuję się w trudnych przypadkach. Odwracanie inżynierii (reverse engineering) systemów bez dokumentacji (np. BMC Remedy, kompleksowe systemy płatności).</p>
+                        </div>
+                        <div class="story-card p-6 rounded-lg">
+                            <h3 class="text-lg font-bold text-white mb-2">Systemy dużej skali (High Traffic)</h3>
+                            <p class="text-sm text-slate-400">Optymalizacja pod piki ruchu (kampanie Foot Locker), przetwarzanie miliardów transakcji (fintech). Wiem, jak pisać kod, który się nie przewraca.</p>
+                        </div>
+                        <div class="story-card p-6 rounded-lg border-indigo-500/30">
+                            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                                AI & Algorytmika
+                                <span class="bg-indigo-500/20 text-indigo-300 text-[10px] px-2 py-1 rounded uppercase tracking-wide">Nowy kierunek</span>
+                            </h3>
+                            <p class="text-sm text-slate-400">Implementacja agentów AI, RAG (Retrieval-Augmented Generation) do analizy dokumentacji medycznej i technicznej.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-transparent"></div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold text-white mb-6">Dlaczego BioTech i Medycyna?</h2>
+                    <p class="text-lg text-slate-300">
+                        Technologia to dla mnie coś więcej niż zawód. To narzędzie do ratowania życia.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/30 border border-slate-700 rounded-2xl p-8 md:p-12" data-aos="zoom-in">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Historia osobista</h3>
+                            <p class="text-slate-400 mb-4">
+                                Mój 10-letni syn ma dysplazję włóknistą (FD). Przeszliśmy piekło błędnej diagnozy histopatologicznej, która mogła doprowadzić do niepotrzebnej, oszpecającej operacji. Dopiero badania DNA wskazały prawdę.
+                            </p>
+                            <p class="text-slate-400 mb-4">
+                                Zrozumiałem wtedy, że lekarze toną w danych i nie nadążają za najnowszą literaturą (PubMed). 
+                            </p>
+                            <p class="text-white font-medium">
+                                Buduję Fundację i narzędzia AI, które:
+                            </p>
+                            <ul class="list-disc list-inside text-slate-400 mt-2 space-y-1">
+                                <li>Analizują literaturę medyczną w czasie rzeczywistym.</li>
+                                <li>Tworzą drzewa decyzyjne dla rzadkich chorób.</li>
+                                <li>Pomagają unikać błędów diagnostycznych.</li>
+                            </ul>
+                        </div>
+                        <div class="relative">
+                            <div class="aspect-square bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full flex items-center justify-center border border-white/10 relative">
+                                <div class="absolute inset-0 animate-[spin_10s_linear_infinite] border-t border-r border-white/20 rounded-full"></div>
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-white mb-1">AI + DNA</div>
+                                    <div class="text-sm text-slate-500 uppercase tracking-widest">Precision Medicine</div>
+                                </div>
+                            </div>
+                            <div class="mt-6 text-center">
+                                <p class="text-xs text-slate-500">
+                                    "Pracuję nad czymś w stylu Open-Cure. Dostęp do wiedzy i leczenia nie powinien być luksusem."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="py-24 bg-[#0B0F19]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-white mb-4">Dwie ścieżki współpracy</h2>
+                    <p class="text-slate-400">Jak mogę wnieść wartość do Twojego projektu?</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-slate-900 p-8 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-colors group">
+                        <div class="mb-6 bg-slate-800 w-12 h-12 flex items-center justify-center rounded text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Komercyjne R&D i Inżynieria</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Dla firm potrzebujących seniora/leada, który weźmie odpowiedzialność za wynik.
+                        </p>
+                        <ul class="space-y-3 text-slate-300 text-sm mb-8">
+                            <li class="flex items-center gap-2">✓ Audyt i ratowanie projektów (Legacy Code)</li>
+                            <li class="flex items-center gap-2">✓ Architektura mikroserwisów i skalowalność</li>
+                            <li class="flex items-center gap-2">✓ Wdrażanie automatyzacji opartej na LLM/AI</li>
+                            <li class="flex items-center gap-2">✓ Mentoring zespołów developerskich</li>
+                        </ul>
+                        <a href="#contact" class="text-indigo-400 hover:text-indigo-300 text-sm font-bold flex items-center gap-1">
+                            Umów konsultację biznesową <span class="text-lg">→</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-slate-900 p-8 rounded-xl border border-slate-800 hover:border-purple-500/50 transition-colors group">
+                        <div class="mb-6 bg-slate-800 w-12 h-12 flex items-center justify-center rounded text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Partnerstwo BioTech & Fundacja</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Dla lekarzy, naukowców i inwestorów chcących wesprzeć projekt Open-Cure.
+                        </p>
+                        <ul class="space-y-3 text-slate-300 text-sm mb-8">
+                            <li class="flex items-center gap-2">✓ Narzędzia AI wspierające diagnostykę</li>
+                            <li class="flex items-center gap-2">✓ Współpraca badawcza (PCR, Bioinformatyka)</li>
+                            <li class="flex items-center gap-2">✓ Budowa społeczności pacjenckich</li>
+                            <li class="flex items-center gap-2">✓ Transparentne finansowanie badań</li>
+                        </ul>
+                        <a href="#contact" class="text-purple-400 hover:text-purple-300 text-sm font-bold flex items-center gap-1">
+                            Dołącz do misji <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10 border-t border-white/5 bg-[#0F1420]">
+            <div class="container mx-auto px-6">
+                <p class="text-center text-slate-500 text-xs uppercase tracking-widest mb-6">Zaufali mojemu doświadczeniu</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-6 md:h-8" alt="PayPal">
+                    <img src="https://upload.wikimedia.org/wikipedia/fr/9/94/Foot_Locker_logo.svg" class="h-6 md:h-8" alt="Foot Locker">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg" class="h-6 md:h-8" alt="Siemens">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sage-logo_svg.svg/2880px-Sage-logo_svg.svg.png" class="h-6 md:h-8" alt="Sage">
+                    <span class="text-slate-400 font-bold text-xl">ArsMacros</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white mb-6">Porozmawiajmy.</h2>
+                    <p class="text-slate-400 mb-10">
+                        Szukasz eksperta, który "dowiezie" trudny projekt? A może chcesz wesprzeć inicjatywę walki z chorobami rzadkimi? Jestem otwarty na obie rozmowy.
+                    </p>
+                    
+                    <div class="bg-slate-900 p-8 rounded-xl border border-slate-800 text-left">
+                         <form action="https://formspree.io/f/mldwqvkp" method="POST" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Temat</label>
+                                <select name="subject" class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none">
+                                    <option value="business">Współpraca Komercyjna (IT/Consulting)</option>
+                                    <option value="foundation">Fundacja / BioTech / Medycyna</option>
+                                    <option value="other">Inne</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Email</label>
+                                <input type="email" name="email" required class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Wiadomość</label>
+                                <textarea name="message" rows="4" required class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded transition-colors">
+                                Wyślij wiadomość
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="mt-8 text-slate-500 text-sm">
+                        <p>Dariusz Miśkiewicz | Human Technology</p>
+                        <p>Zielona Góra, Polska | NIP: 9730802171</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+    </script>
+</body>
+</html>
