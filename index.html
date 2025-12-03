@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="pl" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Dariusz Miśkiewicz | High-Performance Engineer & BioTech R&D</title>
-    <meta name="description" content="Lead Software Engineer (PayPal, Sage, Siemens). Specjalizacja: High-Performance Systems, Legacy Rescue & AI for Biotech. 20 lat doświadczenia.">
-    
+    <meta name="description"
+        content="Lead Software Engineer (PayPal, Sage, Siemens). Specjalizacja: High-Performance Systems, Legacy Rescue & AI for Biotech. 20 lat doświadczenia.">
+
+    <!-- Language and SEO -->
+    <link rel="canonical" href="https://humantechnology.com.pl/">
+    <link rel="alternate" hreflang="pl" href="https://humantechnology.com.pl/">
+    <link rel="alternate" hreflang="en" href="https://humantechnology.com.pl/">
+    <link rel="alternate" hreflang="x-default" href="https://humantechnology.com.pl/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="D.MIŚKIEWICZ | High-Performance Engineering & BioTech R&D">
+    <meta property="og:description"
+        content="20 years of Enterprise engineering experience. Mathematical precision for FinTech to Genetics.">
+    <meta property="og:url" content="https://humantechnology.com.pl/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -30,33 +47,39 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400&display=swap');
-        
-        body { font-family: 'Inter', sans-serif; }
-        .font-mono { font-family: 'JetBrains Mono', monospace; }
-        
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
         /* Custom Gradients & Cards */
         .metric-card {
             background: linear-gradient(145deg, rgba(30, 41, 59, 0.4), rgba(15, 23, 42, 0.6));
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
         }
+
         .metric-card:hover {
             border-color: rgba(99, 102, 241, 0.5);
             transform: translateY(-2px);
         }
-        
+
         .glass-panel {
             background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
-        
+
         .status-item {
             display: flex;
             align-items: center;
@@ -68,6 +91,7 @@
         }
     </style>
 </head>
+
 <body class="bg-[#0B0F19] text-slate-300 antialiased selection:bg-indigo-500 selection:text-white">
 
     <nav class="fixed w-full z-50 bg-[#0B0F19]/90 backdrop-blur border-b border-white/5">
@@ -76,64 +100,122 @@
                 <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
                 D.MIŚKIEWICZ <span class="text-slate-600 font-normal">| Human Technology</span>
             </div>
-            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-                <a href="#results" class="hover:text-white transition-colors">Metodologia & Wyniki</a>
-                <a href="#mission" class="text-indigo-400 hover:text-indigo-300 transition-colors">Misja Fundacji</a>
-                <a href="#contact" class="text-white border border-white/20 px-4 py-2 rounded hover:bg-white hover:text-black transition-all">Kontakt</a>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400 items-center">
+                <a href="#results" class="hover:text-white transition-colors lang-pl">Metodologia & Wyniki</a>
+                <a href="#results" class="hover:text-white transition-colors lang-en hidden">Methodology & Results</a>
+                <a href="#mission" class="text-indigo-400 hover:text-indigo-300 transition-colors lang-pl">Misja
+                    Fundacji</a>
+                <a href="#mission"
+                    class="text-indigo-400 hover:text-indigo-300 transition-colors lang-en hidden">Foundation
+                    Mission</a>
+                <a href="#contact"
+                    class="text-white border border-white/20 px-4 py-2 rounded hover:bg-white hover:text-black transition-all lang-pl">Kontakt</a>
+                <a href="#contact"
+                    class="text-white border border-white/20 px-4 py-2 rounded hover:bg-white hover:text-black transition-all lang-en hidden">Contact</a>
+
+                <!-- Language Switcher -->
+                <div class="flex items-center gap-1 ml-4">
+                    <button onclick="switchLanguage('pl')"
+                        class="lang-switch px-2 py-1 text-xs rounded transition-colors" data-lang="pl">PL</button>
+                    <span class="text-slate-600">|</span>
+                    <button onclick="switchLanguage('en')"
+                        class="lang-switch px-2 py-1 text-xs rounded transition-colors" data-lang="en">EN</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <main>
         <section class="min-h-[90vh] flex items-center relative pt-20 overflow-hidden">
-            <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+            <div
+                class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+            </div>
             <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[100px]"></div>
 
             <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-5xl" data-aos="fade-up">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono mb-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono mb-6">
                         <span class="relative flex h-2 w-2">
-                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                          <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                         </span>
-                        <span>OPEN FOR R&D & CONSULTING</span>
+                        <span class="lang-pl">OPEN FOR R&D & CONSULTING</span>
+                        <span class="lang-en hidden">AVAILABLE FOR R&D & CONSULTING</span>
                     </div>
-                    
+
                     <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-8">
-                        High-Performance Engineering.<br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Od Fintechu po Genetykę.</span>
+                        <span class="lang-pl">High-Performance Engineering.<br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Od
+                                Fintechu po Genetykę.</span></span>
+                        <span class="lang-en hidden">High-Performance Engineering.<br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">From
+                                FinTech to Genetics.</span></span>
                     </h1>
-                    
-                    <p class="text-xl text-slate-400 leading-relaxed max-w-2xl mb-12">
-                        20 lat doświadczenia w systemach <strong>Enterprise</strong> (PayPal, Sage, Siemens). 
-                        Dostarczam matematyczną precyzję tam, gdzie liczy się skala, bezpieczeństwo i wynik — od miliardów transakcji po analizę DNA.
+
+                    <p class="text-xl text-slate-400 leading-relaxed max-w-2xl mb-12 lang-pl">
+                        20 lat doświadczenia w systemach <strong>Enterprise</strong> (PayPal, Sage, Siemens).
+                        Dostarczam matematyczną precyzję tam, gdzie liczy się skala, bezpieczeństwo i wynik — od
+                        miliardów transakcji po analizę DNA.
+                    </p>
+                    <p class="text-xl text-slate-400 leading-relaxed max-w-2xl mb-12 lang-en hidden">
+                        20 years of experience in <strong>Enterprise</strong> systems (PayPal, Sage, Siemens).
+                        I deliver mathematical precision where scale, security and results matter — from billions of
+                        transactions to DNA analysis.
                     </p>
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
                         <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
-                            <div class="text-3xl font-bold text-white mb-1">30 etatów</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wide">Zaoszczędzone (Telstra)</div>
+                            <div class="text-3xl font-bold text-white mb-1 lang-pl">30 etatów</div>
+                            <div class="text-3xl font-bold text-white mb-1 lang-en hidden">30 FTEs</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-pl">Zaoszczędzone (Telstra)
+                            </div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-en hidden">Saved (Telstra)
+                            </div>
                         </div>
                         <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
                             <div class="text-3xl font-bold text-white mb-1">8x</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wide">Wydajność vs Średnia (Sage)</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-pl">Wydajność vs Średnia
+                                (Sage)</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-en hidden">Performance vs
+                                Average (Sage)</div>
                         </div>
                         <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
                             <div class="text-3xl font-bold text-white mb-1">0 downtime</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wide">Miliardy Transakcji (PayPal)</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-pl">Miliardy Transakcji
+                                (PayPal)</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-en hidden">Billions of
+                                Transactions (PayPal)</div>
                         </div>
                         <div class="metric-card p-5 rounded-lg border border-slate-800 bg-slate-900/50">
                             <div class="text-3xl font-bold text-white mb-1">BioTech</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wide">Certyfikowany w PCR/UG</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-pl">Certyfikowany w PCR/UG
+                            </div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide lang-en hidden">
+                                PCR/Bioinformatics Certified</div>
                         </div>
                     </div>
 
                     <div class="flex flex-wrap gap-4">
-                        <a href="#contact" class="bg-indigo-600 text-white px-8 py-4 font-bold rounded hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/20">
+                        <a href="#contact"
+                            class="bg-indigo-600 text-white px-8 py-4 font-bold rounded hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/20 lang-pl">
                             Współpraca Komercyjna
                         </a>
-                        <a href="#mission" class="px-8 py-4 font-medium text-slate-300 hover:text-white flex items-center gap-2 transition-colors border border-slate-700 rounded hover:bg-slate-800">
+                        <a href="#contact"
+                            class="bg-indigo-600 text-white px-8 py-4 font-bold rounded hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/20 lang-en hidden">
+                            Commercial Partnership
+                        </a>
+                        <a href="#mission"
+                            class="px-8 py-4 font-medium text-slate-300 hover:text-white flex items-center gap-2 transition-colors border border-slate-700 rounded hover:bg-slate-800 lang-pl">
                             Misja Fundacji
+                            <span class="text-purple-400">→</span>
+                        </a>
+                        <a href="#mission"
+                            class="px-8 py-4 font-medium text-slate-300 hover:text-white flex items-center gap-2 transition-colors border border-slate-700 rounded hover:bg-slate-800 lang-en hidden">
+                            Foundation Mission
                             <span class="text-purple-400">→</span>
                         </a>
                     </div>
@@ -144,121 +226,316 @@
         <section id="results" class="py-24 bg-[#0F1420] border-y border-white/5">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-white mb-4">Algorytmiczne myślenie w erze AI</h2>
-                    <p class="text-slate-400">Gdy inni widzą kod, ja widzę równania do zoptymalizowania.</p>
+                    <h2 class="text-3xl font-bold text-white mb-4 lang-pl">Algorytmiczne myślenie w erze AI</h2>
+                    <h2 class="text-3xl font-bold text-white mb-4 lang-en hidden">Algorithmic Thinking in the AI Era
+                    </h2>
+                    <p class="text-slate-400 lang-pl">Gdy inni widzą kod, ja widzę równania do zoptymalizowania.</p>
+                    <p class="text-slate-400 lang-en hidden">While others see code, I see equations to optimize.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12 items-start">
-                    
+
                     <div data-aos="fade-right">
                         <div class="sticky top-24">
-                            <h3 class="text-2xl font-bold text-white mb-6">Nie tylko kod. <br><span class="text-indigo-400">Inżynieria Kognitywna.</span></h3>
-                            
-                            <div class="space-y-6 text-slate-400 leading-relaxed text-lg">
-                                <p>
-                                    <strong>Moja przewaga nie wynika ze znajomości składni języka, ale z myślenia.</strong>
-                                </p>
-                                <p>
-                                    Jako inżynier z backgroundem matematycznym (uściśliłem dowód twierdzenia z analizy kombinatorycznej i opracowałem algorytm sortowania O(n) dla specyficznej klasy danych), patrzę na systemy jak na zbiory reguł. W <strong>Sage Group</strong> pozwoliło mi to osiągnąć 8-krotnie wyższą wydajność niż średnia zespołu (16 ticketów vs 2).
-                                </p>
-                                
-                                <div class="mt-6 border-l-2 border-purple-500 pl-6 py-2">
-                                    <h4 class="text-white font-bold text-lg mb-2">Od "Pułapek Myślenia" do Architektury LLM</h4>
-                                    <p class="text-sm text-slate-400 mb-4">
-                                        Fascynacja psychologią poznawczą (Kahneman) pozwoliła mi zrozumieć AI szybciej niż innym. Już na wczesnych modelach GPT-3 badałem zjawisko <strong>primingu (torowania)</strong>.
-                                    </p>
-                                    <div class="bg-slate-900/50 p-4 rounded border border-slate-700 text-sm font-mono text-slate-300 mb-4">
-                                        <p class="text-xs text-slate-500 mb-2">// Mój wczesny eksperyment na tokenach:</p>
-                                        <p>Kontekst: "Napoje" -> AI uzupełnia "wo_a" jako "woda".</p>
-                                        <p>Kontekst: "Determinizm" -> AI uzupełnia "wo_a" jako "wola".</p>
-                                    </div>
-                                    <p class="text-sm text-slate-400">
-                                        Rozumiem, jak kontekst semantyczny zmienia prawdopodobieństwo wystąpienia tokenów. Dzięki temu stosuję <strong>Recursive Prompt Optimization</strong> — wymuszam na modelu autokorektę, by uzyskać deterministyczne wyniki w medycynie i finansach.
-                                    </p>
-                                </div>
+                            <h3 class="text-2xl font-bold text-white mb-6 lang-pl">Nie tylko kod. <br><span
+                                    class="text-indigo-400">Inżynieria Kognitywna.</span></h3>
+                            <h3 class="text-2xl font-bold text-white mb-6 lang-en hidden">Not just code. <br><span
+                                    class="text-indigo-400">Cognitive Engineering.</span></h3>
 
-                                <div class="mt-8 p-6 rounded-xl bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20">
-                                    <h4 class="text-white font-bold mb-2 flex items-center gap-2">
-                                        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
-                                        Wartość dla Biznesu
-                                    </h4>
-                                    <p class="text-sm text-slate-400">
-                                        Przekształcam "kreatywne" AI w precyzyjne narzędzie inżynierskie. Kluczowe dla branż regulowanych.
-                                    </p>
+                            <div class="space-y-6 text-slate-400 leading-relaxed text-lg lang-pl">
+                                <p>
+                                    <strong>Moja przewaga nie wynika ze znajomości składni języka, ale z
+                                        myślenia.</strong>
+                                </p>
+                                <p>
+                                    Jako inżynier z backgroundem matematycznym (uściśliłem dowód twierdzenia z analizy
+                                    kombinatorycznej i opracowałem algorytm sortowania O(n) dla specyficznej klasy
+                                    danych), patrzę na systemy jak na zbiory reguł. W <strong>Sage Group</strong>
+                                    pozwoliło mi to osiągnąć 8-krotnie wyższą wydajność niż średnia zespołu (16 ticketów
+                                    vs 2).
+                                </p>
+                            </div>
+
+                            <div class="space-y-6 text-slate-400 leading-relaxed text-lg lang-en hidden">
+                                <p>
+                                    <strong>My advantage doesn't come from knowing syntax, but from thinking.</strong>
+                                </p>
+                                <p>
+                                    As an engineer with mathematical background (I refined a proof of a combinatorial
+                                    analysis theorem and developed an O(n) sorting algorithm for a specific data class),
+                                    I view systems as sets of rules. At <strong>Sage Group</strong>, this allowed me to
+                                    achieve 8x higher performance than the team average (16 tickets vs 2).
+                                </p>
+                            </div>
+
+                            <div class="mt-6 border-l-2 border-purple-500 pl-6 py-2 lang-pl">
+                                <h4 class="text-white font-bold text-lg mb-2">Od "Pułapek Myślenia" do Architektury LLM
+                                </h4>
+                                <p class="text-sm text-slate-400 mb-4">
+                                    Fascynacja psychologią poznawczą (Kahneman) pozwoliła mi zrozumieć AI szybciej niż
+                                    innym. Już na wczesnych modelach GPT-3 badałem zjawisko <strong>primingu
+                                        (torowania)</strong>.
+                                </p>
+                                <div
+                                    class="bg-slate-900/50 p-4 rounded border border-slate-700 text-sm font-mono text-slate-300 mb-4">
+                                    <p class="text-xs text-slate-500 mb-2">// Mój wczesny eksperyment na tokenach:</p>
+                                    <p>Kontekst: "Napoje" -> AI uzupełnia "wo_a" jako "woda".</p>
+                                    <p>Kontekst: "Determinizm" -> AI uzupełnia "wo_a" jako "wola".</p>
                                 </div>
+                                <p class="text-sm text-slate-400">
+                                    Rozumiem, jak kontekst semantyczny zmienia prawdopodobieństwo wystąpienia tokenów.
+                                    Dzięki temu stosuję <strong>Recursive Prompt Optimization</strong> — wymuszam na
+                                    modelu autokorektę, by uzyskać deterministyczne wyniki w medycynie i finansach.
+                                </p>
+                            </div>
+
+                            <div
+                                class="mt-8 p-6 rounded-xl bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 lang-pl">
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                    </svg>
+                                    Wnioski dla Biznesu
+                                </h4>
+                                <p class="text-sm text-slate-400">
+                                    Nie "rozmawiam" z AI. Programuję je kontekstem. To kluczowe przy budowaniu agentów
+                                    RAG, które muszą być precyzyjne, a nie "halucynować".
+                                </p>
+                            </div>
+
+                            <div class="mt-6 border-l-2 border-purple-500 pl-6 py-2 lang-en hidden">
+                                <h4 class="text-white font-bold text-lg mb-2">From "Thinking, Fast and Slow" to LLM
+                                    Architecture</h4>
+                                <p class="text-sm text-slate-400 mb-4">
+                                    My fascination with cognitive psychology (Kahneman) allowed me to understand AI
+                                    faster than others. I was already studying <strong>priming</strong> phenomena on
+                                    early GPT-3 models.
+                                </p>
+                                <div
+                                    class="bg-slate-900/50 p-4 rounded border border-slate-700 text-sm font-mono text-slate-300 mb-4">
+                                    <p class="text-xs text-slate-500 mb-2">// My early token experiment (based on Kahneman):</p>
+                                    <p>Context: "Kitchen/Food" -> AI completes "SO_P" as "SOUP".</p>
+                                    <p>Context: "Shower/Wash" -> AI completes "SO_P" as "SOAP".</p>
+                                </div>
+                                <p class="text-sm text-slate-400">
+                                    I understand how semantic context changes token probability. This enables me to use
+                                    <strong>Recursive Prompt Optimization</strong> — forcing the model to self-correct
+                                    for deterministic results in medicine and finance.
+                                </p>
+                            </div>
+
+                            <div
+                                class="mt-8 p-6 rounded-xl bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-500/20 lang-en hidden">
+                                <h4 class="text-white font-bold mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                    </svg>
+                                    Business Value
+                                </h4>
+                                <p class="text-sm text-slate-400">
+                                    I don't "chat" with AI. I program it with context. This is crucial for building RAG
+                                    agents that must be precise, not "hallucinate".
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="grid gap-6" data-aos="fade-left">
+                <!-- Case Studies Wrapper (Column 2) -->
+                <div data-aos="fade-left">
+                    <!-- Polish Case Studies -->
+                    <div class="grid gap-6 lang-pl">
                         
                         <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
-                            <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">PayPal & Fintech</h4>
-                                <span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Miliardy Transakcji</span>
-                            </div>
-                            <div class="space-y-3 text-sm text-slate-400">
-                                <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Migracja i wdrażanie zmian w niedokumentowanym legacy code (Ruby/Microservices) przy ogromnej skali.</p>
-                                <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Implementacja "percentage feature switch" dla webhooków, umożliwiająca bezpieczne testowanie na produkcji.</p>
-                                <p><strong class="text-slate-200 block mb-1">Wynik:</strong> 0 downtime'u, uporządkowana architektura, pełna obserwowalność w Splunk.</p>
-                            </div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+                                PayPal & Fintech</h4>
+                            <span
+                                class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Miliardy
+                                Transakcji</span>
                         </div>
+                        <div class="space-y-3 text-sm text-slate-400">
+                            <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Migracja i wdrażanie zmian w
+                                niedokumentowanym legacy code (Ruby/Microservices) przy ogromnej skali.</p>
+                            <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Implementacja "percentage
+                                feature switch" dla webhooków, umożliwiająca bezpieczne testowanie na produkcji.</p>
+                            <p><strong class="text-slate-200 block mb-1">Wynik:</strong> 0 downtime'u, uporządkowana
+                                architektura, pełna obserwowalność w Splunk.</p>
+                        </div>
+                    </div>
 
-                        <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
-                            <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Foot Locker</h4>
-                                <span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">High Traffic Load</span>
-                            </div>
-                            <div class="space-y-3 text-sm text-slate-400">
-                                <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Krytyczne obciążenie podczas Black Friday, awaria głównej strony.</p>
-                                <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Agresywna optymalizacja backendu i cache'owania dedykowanej sekcji kampanii.</p>
-                                <p><strong class="text-slate-200 block mb-1">Wynik:</strong> Moja sekcja obsłużyła cały ruch bezbłędnie, ratując przychód z kampanii.</p>
-                            </div>
+                    <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Foot
+                                Locker</h4>
+                            <span
+                                class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">High
+                                Traffic Load</span>
                         </div>
+                        <div class="space-y-3 text-sm text-slate-400">
+                            <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Krytyczne obciążenie podczas
+                                Black Friday, awaria głównej strony.</p>
+                            <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Agresywna optymalizacja
+                                backendu i cache'owania dedykowanej sekcji kampanii.</p>
+                            <p><strong class="text-slate-200 block mb-1">Wynik:</strong> Moja sekcja obsłużyła cały ruch
+                                bezbłędnie, ratując przychód z kampanii.</p>
+                        </div>
+                    </div>
 
-                        <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
-                            <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Telstra & Hörmann</h4>
-                                <span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Automatyzacja</span>
-                            </div>
-                            <div class="space-y-3 text-sm text-slate-400">
-                                <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Tysiące godzin traconych na manualne procesy (SharePoint/ITSM).</p>
-                                <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Budowa customowych narzędzi integrujących i automatyzujących przepływ danych (ArsMacros).</p>
-                                <p><strong class="text-slate-200 block mb-1">Wynik:</strong> Oszczędność pracy równoważna 30 etatom (Telstra). ROI liczone w milionach.</p>
-                            </div>
+                    <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+                                Telstra & Hörmann</h4>
+                            <span
+                                class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Automatyzacja</span>
                         </div>
+                        <div class="space-y-3 text-sm text-slate-400">
+                            <p><strong class="text-slate-200 block mb-1">Wyzwanie:</strong> Tysiące godzin traconych na
+                                manualne procesy (SharePoint/ITSM).</p>
+                            <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Budowa customowych
+                                narzędzi integrujących i automatyzujących przepływ danych (ArsMacros).</p>
+                            <p><strong class="text-slate-200 block mb-1">Wynik:</strong> Oszczędność pracy równoważna 30
+                                etatom (Telstra). ROI liczone w milionach.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                    <!-- English Case Studies -->
+                    <div class="grid gap-6 lang-en hidden">
+                        <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+                                PayPal & FinTech</h4>
+                            <span
+                                class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Billions
+                                of Transactions</span>
+                        </div>
+                        <div class="space-y-3 text-sm text-slate-400">
+                            <p><strong class="text-slate-200 block mb-1">Challenge:</strong> Migration and implementing
+                                changes in undocumented legacy code (Ruby/Microservices) at massive scale.</p>
+                            <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Implementation of
+                                "percentage feature switch" for webhooks, enabling safe production testing.</p>
+                            <p><strong class="text-slate-200 block mb-1">Result:</strong> 0 downtime, organized
+                                architecture, full observability in Splunk.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Foot
+                                Locker</h4>
+                            <span
+                                class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">High
+                                Traffic Load</span>
+                        </div>
+                        <div class="space-y-3 text-sm text-slate-400">
+                            <p><strong class="text-slate-200 block mb-1">Challenge:</strong> Critical load during Black
+                                Friday, main site failure.</p>
+                            <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Emergency refactoring of
+                                bottleneck algorithms, implementation of caching layers.</p>
+                            <p><strong class="text-slate-200 block mb-1">Result:</strong> Site restored within 2 hours,
+                                traffic handled without issues.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-8 rounded-xl hover:border-indigo-500/30 transition-all group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+                                Legacy Rescue</h4>
+                            <span
+                                class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1 rounded">Enterprise
+                                Scale</span>
+                        </div>
+                        <div class="space-y-3 text-sm text-slate-400">
+                            <p><strong class="text-slate-200 block mb-1">Challenge:</strong> Modernization of critical
+                                systems written in obsolete technologies.</p>
+                            <p><strong class="text-slate-200 block mb-1">Engineering:</strong> Gradual migration
+                                strategy, API abstraction layers, comprehensive testing.</p>
+                            <p><strong class="text-slate-200 block mb-1">Result:</strong> Savings equivalent to 30 FTEs
+                                (Telstra). ROI measured in millions.</p>
+                        </div>
+                    </div>
 
                     </div>
+
                 </div>
+            </div>
             </div>
         </section>
 
         <section id="mission" class="py-24 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0B0F19] via-indigo-950/10 to-[#0B0F19]"></div>
             <div class="container mx-auto px-6 relative z-10 text-center">
-                <span class="text-indigo-400 font-mono text-xs tracking-widest uppercase mb-4 block">Beyond Engineering</span>
-                <h2 class="text-4xl font-bold text-white mb-8">Dlaczego robię to, co robię?</h2>
-                
+                <span class="text-indigo-400 font-mono text-xs tracking-widest uppercase mb-4 block">Beyond
+                    Engineering</span>
+                <h2 class="text-4xl font-bold text-white mb-8 lang-pl">Dlaczego robię to, co robię?</h2>
+                <h2 class="text-4xl font-bold text-white mb-8 lang-en hidden">Why do I do what I do?</h2>
+
                 <div class="max-w-3xl mx-auto glass-panel p-8 md:p-12 rounded-2xl text-left border-indigo-500/20">
-                    <p class="text-lg text-slate-300 mb-6 leading-relaxed">
-                        Mój 10-letni syn choruje na dysplazję włóknistą. Przez pomyłkę histopatologa groziła mu okaleczająca operacja. Uratowały nas dopiero badania genetyczne ("złoty standard"), o których lekarze w natłoku danych często zapominają.
-                    </p>
-                    <p class="text-lg text-slate-300 mb-6 leading-relaxed">
-                        Zrozumiałem, że medycyna potrzebuje inżynierów. Dlatego zdobyłem <strong>certyfikat z technik PCR i bioinformatyki na Uniwersytecie Gdańskim</strong> — aby rozumieć problem u źródła, na poziomie DNA, i budować narzędzia, których lekarze realnie potrzebują.
-                    </p>
-                    <p class="text-lg text-slate-300 mb-8 leading-relaxed border-l-2 border-indigo-500 pl-4">
-                        Mój cel jest jasny: Buduję agenta AI weryfikującego procedury leczenia chorób rzadkich, a docelowo — <strong>uruchamiam badania nad lekiem</strong>. Wiedza inżynierska i zyski z komercyjnych projektów są paliwem dla tej misji.
-                    </p>
-                    
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-t border-slate-600 pt-8 mt-8">
-                        <div class="text-left">
-                            <div class="text-white font-bold">Twoja Firma zyskuje Eksperta</div>
-                            <div class="text-sm text-slate-400">Rozwiązuję Twoje problemy technologiczne.</div>
+                    <!-- Polish Version -->
+                    <div class="lang-pl">
+                        <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                            Mój 10-letni syn choruje na dysplazję włóknistą. Przez pomyłkę histopatologa groziła mu
+                            okaleczająca operacja. Uratowały nas dopiero badania genetyczne ("złoty standard"), o
+                            których lekarze w natłoku danych często zapominają.
+                        </p>
+                        <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                            Zrozumiałem, że medycyna potrzebuje inżynierów. Dlatego zdobyłem <strong>certyfikat z
+                                technik PCR i bioinformatyki na Uniwersytecie Gdańskim</strong> — aby rozumieć problem u
+                            źródła, na poziomie DNA, i budować narzędzia, których lekarze realnie potrzebują.
+                        </p>
+                        <p class="text-lg text-slate-300 mb-8 leading-relaxed border-l-2 border-indigo-500 pl-4">
+                            Mój cel jest jasny: Buduję agenta AI weryfikującego procedury leczenia chorób rzadkich, a
+                            docelowo — <strong>uruchamiam badania nad lekiem</strong>. Wiedza inżynierska i zyski z
+                            komercyjnych projektów są paliwem dla tej misji.
+                        </p>
+
+                        <div
+                            class="flex flex-col md:flex-row items-center justify-between gap-6 border-t border-slate-600 pt-8 mt-8">
+                            <div class="text-left">
+                                <div class="text-white font-bold">Twoja Firma zyskuje Eksperta</div>
+                                <div class="text-sm text-slate-400">Rozwiązuję Twoje problemy technologiczne.</div>
+                            </div>
+                            <div class="hidden md:block w-px h-12 bg-slate-600"></div>
+                            <div class="text-left md:text-right">
+                                <div class="text-white font-bold">Ja finansuję badania (R&D)</div>
+                                <div class="text-sm text-slate-400">Nad lekiem na choroby rzadkie.</div>
+                            </div>
                         </div>
-                        <div class="hidden md:block w-px h-12 bg-slate-600"></div>
-                        <div class="text-left md:text-right">
-                            <div class="text-white font-bold">Ja finansuję badania (R&D)</div>
-                            <div class="text-sm text-slate-400">Nad lekiem na choroby rzadkie.</div>
+                    </div>
+
+                    <!-- English Version -->
+                    <div class="lang-en hidden">
+                        <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                            My 10-year-old son suffers from fibrous dysplasia. Due to a histopathologist's error, he
+                            faced a disfiguring surgery. We were saved by genetic testing (the "gold standard"), which
+                            doctors often forget about in the flood of data.
+                        </p>
+                        <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                            I realized that medicine needs engineers. That's why I obtained a <strong>certificate in PCR
+                                techniques and bioinformatics from the University of Gdańsk</strong> — to understand the
+                            problem at its source, at the DNA level, and build tools that doctors actually need.
+                        </p>
+                        <p class="text-lg text-slate-300 mb-8 leading-relaxed border-l-2 border-indigo-500 pl-4">
+                            My goal is clear: I'm building an AI agent to verify treatment procedures for rare diseases,
+                            and ultimately — <strong>launching drug research</strong>. Engineering knowledge and profits
+                            from commercial projects fuel this mission.
+                        </p>
+
+                        <div
+                            class="flex flex-col md:flex-row items-center justify-between gap-6 border-t border-slate-600 pt-8 mt-8">
+                            <div class="text-left">
+                                <div class="text-white font-bold">You finance engineering</div>
+                                <div class="text-sm text-slate-400">I deliver results & precision.</div>
+                            </div>
+                            <div class="text-left md:text-right">
+                                <div class="text-white font-bold">I finance research (R&D)</div>
+                                <div class="text-sm text-slate-400">For rare disease treatments.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -268,13 +545,16 @@
         <section id="contact" class="py-24">
             <div class="container mx-auto px-6">
 
-                <div class="max-w-4xl mx-auto grid md:grid-cols-5 gap-12 glass-panel rounded-2xl overflow-hidden border border-slate-800">
-                    
+                <div
+                    class="max-w-4xl mx-auto grid md:grid-cols-5 gap-12 glass-panel rounded-2xl overflow-hidden border border-slate-800">
+
                     <div class="md:col-span-2 bg-indigo-900/20 p-10 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-2xl font-bold text-white mb-2">Kontakt</h3>
-                            <p class="text-slate-400 mb-8">Odpowiadam osobiście. Zazwyczaj w ciągu 24h.</p>
-                            
+                            <h3 class="text-2xl font-bold text-white mb-2 lang-pl">Kontakt</h3>
+                            <h3 class="text-2xl font-bold text-white mb-2 lang-en hidden">Contact</h3>
+                            <p class="text-slate-400 mb-8 lang-pl">Odpowiadam osobiście. Zazwyczaj w ciągu 24h.</p>
+                            <p class="text-slate-400 mb-8 lang-en hidden">I respond personally. Usually within 24h.</p>
+
                             <ul class="space-y-4 text-sm">
                                 <li class="flex items-center gap-3 text-slate-300">
                                     <span class="text-indigo-400">@</span> dmiskiew@gmail.com
@@ -288,7 +568,9 @@
                             </ul>
                         </div>
                         <div class="mt-12">
-                            <p class="text-xs text-slate-500 uppercase tracking-widest mb-4">Zaufali mi:</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest mb-4 lang-pl">Zaufali mi:</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest mb-4 lang-en hidden">Trusted by:
+                            </p>
                             <div class="flex flex-wrap gap-4 opacity-60">
                                 <span class="font-bold text-white">PayPal</span>
                                 <span class="font-bold text-white">Siemens</span>
@@ -302,28 +584,57 @@
                         <form action="https://formspree.io/f/mldwqvkp" method="POST" class="space-y-6">
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Imię</label>
-                                    <input type="text" name="name" class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors">
+                                    <label
+                                        class="block text-xs font-bold uppercase text-slate-500 mb-2 lang-pl">Imię</label>
+                                    <label
+                                        class="block text-xs font-bold uppercase text-slate-500 mb-2 lang-en hidden">Name</label>
+                                    <input type="text" name="name"
+                                        class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Email</label>
-                                    <input type="email" name="email" class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors">
+                                    <input type="email" name="email"
+                                        class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors">
                                 </div>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Typ współpracy</label>
-                                <select name="type" class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors">
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2 lang-pl">Typ
+                                    współpracy</label>
+                                <label
+                                    class="block text-xs font-bold uppercase text-slate-500 mb-2 lang-en hidden">Collaboration
+                                    Type</label>
+                                <select name="type"
+                                    class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors lang-pl">
                                     <option>Komercyjna (Senior Engineer / Consulting)</option>
                                     <option>Fundacja / Partnerstwo BioTech</option>
                                     <option>Inne</option>
                                 </select>
+                                <select name="type"
+                                    class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors lang-en hidden">
+                                    <option>Commercial (Senior Engineer / Consulting)</option>
+                                    <option>Foundation / BioTech Partnership</option>
+                                    <option>Other</option>
+                                </select>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Wiadomość</label>
-                                <textarea name="message" rows="4" class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors" placeholder="Opisz krótko swój problem lub propozycję..."></textarea>
+                                <label
+                                    class="block text-xs font-bold uppercase text-slate-500 mb-2 lang-pl">Wiadomość</label>
+                                <label
+                                    class="block text-xs font-bold uppercase text-slate-500 mb-2 lang-en hidden">Message</label>
+                                <textarea name="message" rows="4"
+                                    class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors lang-pl"
+                                    placeholder="Opisz krótko swój problem lub propozycję..."></textarea>
+                                <textarea name="message" rows="4"
+                                    class="w-full bg-[#0B0F19] border border-slate-700 rounded p-3 text-white focus:border-indigo-500 outline-none transition-colors lang-en hidden"
+                                    placeholder="Briefly describe your problem or proposal..."></textarea>
                             </div>
-                            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded transition-transform hover:scale-[1.01]">
+                            <button type="submit"
+                                class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded transition-transform hover:scale-[1.01] lang-pl">
                                 Wyślij wiadomość
+                            </button>
+                            <button type="submit"
+                                class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded transition-transform hover:scale-[1.01] lang-en hidden">
+                                Send Message
                             </button>
                         </form>
                     </div>
@@ -344,6 +655,60 @@
             once: true,
             offset: 50
         });
+
+        // Language switching functionality
+        let currentLang = 'pl';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('preferred-language', lang);
+
+            // Hide all language elements
+            document.querySelectorAll('.lang-pl, .lang-en').forEach(el => {
+                el.classList.add('hidden');
+            });
+
+            // Show elements for selected language
+            document.querySelectorAll(`.lang-${lang}`).forEach(el => {
+                el.classList.remove('hidden');
+            });
+
+            // Update language switcher buttons
+            document.querySelectorAll('.lang-switch').forEach(btn => {
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('bg-indigo-600', 'text-white');
+                    btn.classList.remove('text-slate-400', 'hover:text-white');
+                } else {
+                    btn.classList.remove('bg-indigo-600', 'text-white');
+                    btn.classList.add('text-slate-400', 'hover:text-white');
+                }
+            });
+        }
+
+        // Auto-detect language on page load
+        function detectLanguage() {
+            // Check localStorage first
+            const savedLang = localStorage.getItem('preferred-language');
+            if (savedLang) {
+                return savedLang;
+            }
+
+            // Check browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('en')) {
+                return 'en';
+            }
+
+            // Default to Polish
+            return 'pl';
+        }
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const detectedLang = detectLanguage();
+            switchLanguage(detectedLang);
+        });
     </script>
 </body>
+
 </html>
